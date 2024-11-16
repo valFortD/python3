@@ -2,4 +2,5 @@
 
 # Tutorial video -> https://www.youtube.com/watch?v=_bYFu9mBnr4&list=PPSV
 
-- stopped time 1:09:09
+- stopped 1:09:09 15/11
+- stopped 1:28:25 16/11
