@@ -1,17 +1,18 @@
 def opening():
-    print("********************")
-    print("\n")
+    print("******************************************************************************************************************************************************************************")
 
 print("Hello Nikki")
-slices = input("Pick a number\n")                                 # Creating variable
+slices = input("Pick a number\n")                                       # Creating variable
 print("Great! You'll get " + str(slices) + " slices of pizza.")
 
 opening()
-def multiply(x, y):                                               # Creating function
+def multiply(x, y):                                                     # Creating function
     return x * y
 
-x = multiply(5, 2)
-print("The output if int x is " + str(x) + ".")
+x = int(input("Pick a number for x\n"))
+y = int(input("Pick a number for y\n"))
+total = multiply(x, y)
+print(f"The total of x * y with multiply() function is {total}.")
 
 # Python has no command for declaring a variable.
 # A variable is created when some value is assigned to it.
@@ -21,8 +22,7 @@ print("The output if int x is " + str(x) + ".")
 # If the function body does not have any return statement then a special value None returns when the function terminates
 
 opening()
-# Creating pow function 
-def power(base, exponent):
+def power(base, exponent):                                              # Creating pow function
     result = 1
     for x in range(exponent):
         result = result * base
@@ -48,3 +48,25 @@ def print_pow(base, exponent):
 base = int(input("What is the base?\n"))
 exponent = int(input("What is the exponent?\n"))
 print_pow(base, exponent)
+
+# Python is an interpreted language
+# Unlike C++, python does not need datatype when declaring variables
+# Python data types are numeric(int, float), dictionary{}, bool, set{}, sequence types(string, list, tuple) 
+
+opening()
+# Integral types in C++, numeric in Python
+# int = integers, contains positive and negative whole numbers. No fractions or decimals
+# float = floating numbers = decimal point numbers
+# complex = complex numbers
+
+a = 1
+print(f"Type of a is {type(a)}.")
+
+b = 1.0
+print(f"The type of b is {type(b)}.")
+
+c = 1 + 1j
+print(f"The type of c is {type(c)}.")
+
+opening()
+print(f"Python3 use Unicode by default and it allows for the representation of a much wider range of characters. Thus Python does not have a character data type like C++ does.")
