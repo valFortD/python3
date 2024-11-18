@@ -99,3 +99,18 @@ print(bool(not_found))
 
 # Any strings, list, tuple, set and dictionary are True, except empty ones
 # Any number is True, except 0
+
+opening() # Floating num
+a_ = 10.0
+print(type(a_))
+print(float(50.77))
+
+b_ = float('-123.12')  # Convert it to strings
+print(b_)
+
+# Special characters cannot be floating numbers
+# Example
+ #print(float('uba'))  Output = ValueError: could not convert string to float: 'uba'
+ 
+c_ = float(3)
+print(type(c_))   # Because specified it will be floating num even without decimal points
