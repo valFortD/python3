@@ -1,12 +1,12 @@
 def opening():
-    print("******************************************************************************************************************************************************************************")
+    print("********************")
 
 print("Hello Nikki")
-slices = input("Pick a number\n")                                       # Creating variable
+slices = input("Pick a number\n") # Creating variable
 print("Great! You'll get " + str(slices) + " slices of pizza.")
 
-opening()
-def multiply(x, y):                                                     # Creating function
+opening() # Creating function
+def multiply(x, y):
     return x * y
 
 x = int(input("Pick a number for x\n"))
@@ -17,8 +17,7 @@ print(f"The total of x * y with multiply() function is {total}.")
 # Python has no command for declaring a variable.
 # A variable is created when some value is assigned to it.
 # The value assigned to a variable determines the data type of that variable.
-
-# In python, void functions are not exactly the same as functions in C/C++
+# In Python, void functions are not exactly the same as functions in C/C++
 # If the function body does not have any return statement then a special value None returns when the function terminates
 
 opening()
@@ -53,8 +52,7 @@ print_pow(base, exponent)
 # Unlike C++, python does not need datatype when declaring variables
 # Python data types are numeric(int, float), dictionary{}, bool, set{}, sequence types(string, list, tuple) 
 
-opening()
-# Integral types in C++, numeric in Python
+opening() # Integral types in C++, numeric in Python
 # int = integers, contains positive and negative whole numbers. No fractions or decimals
 # float = floating numbers = decimal point numbers
 # complex = complex numbers
@@ -68,5 +66,36 @@ print(f"The type of b is {type(b)}.")
 c = 1 + 1j
 print(f"The type of c is {type(c)}.")
 
+# Compared to C/C++, Python DOES NOT have signed and unsigned integers as data types
+# There is no need to specify the data types of variables as the interpreter itself predicts the variable data type based on the value assigned to it
+# But can still convert signed integer to unsigned integer with the following example
+signed_integer = -100
+
+# Adding 2^32 to convert signed to unsigned integer
+unsigned_integer = signed_integer + 2**32
+print(unsigned_integer)
+print(type(unsigned_integer))
+
 opening()
 print(f"Python3 use Unicode by default and it allows for the representation of a much wider range of characters. Thus Python does not have a character data type like C++ does.")
+
+opening() # In Python it is known as Escape Characters(Escape sequences in C++)
+text1 = "Hello"
+text2 = "There"
+print("Python and C++ are \"super\" awesome!")       # \" for strings
+print("\\\' is used for single \'1\' character.")    # \' for chars and \\ for one backlash
+print(f"{text1}\r {text2}.")                         # \r similar to \n? carriage return?
+print(f"{text1}\t {text2}.")                         # \t tab between strings
+print(f"{text1}\b {text2}.")                         # \b delete a char
+print(f"{text1}\f{text2}.")                          # \f == \v(C++)
+
+opening() # BOOL FUNCTION
+not_found = 0
+found = True
+num = 5
+print(bool(num))
+print(bool(found))
+print(bool(not_found))
+
+# Any strings, list, tuple, set and dictionary are True, except empty ones
+# Any number is True, except 0
