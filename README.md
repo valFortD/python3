@@ -2,7 +2,8 @@
 
 # Tutorial video -> https://www.youtube.com/watch?v=_bYFu9mBnr4&list=PPSV
 
-- stopped 1:09:09 15/11
-- stopped 1:28:25 16/11
-- stopped 1:52:56 17/11
-- stopped 2:15:02 18/11
+- 1:09:09 15/11
+- 1:28:25 16/11
+- 1:52:56 17/11
+- 2:15:02 18/11
+- 2:28:38 20/11

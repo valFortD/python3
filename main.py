@@ -114,3 +114,31 @@ print(b_)
  
 c_ = float(3)
 print(type(c_))   # Because specified it will be floating num even without decimal points
+
+opening()  # Constant
+# Constants are usually defined on a module level and written in all capital letters with underscores separating words
+MAX_OVERFLOW = 100
+TOTAL = 5
+print(f"These examples {MAX_OVERFLOW} and {TOTAL}, will be an examples of const variables in Python.")
+
+opening()  # Numeric function
+# More often used = standard operators such as +, -, *, /
+# pow for getting power value
+# Import math library for advanced mathematical operations
+# Functions such as min, max to get minimum and maximum of the numbers passed
+# Can also perform arithmetic operations using operator like, add, sub, mul, trudiv
+import operator
+from operator import add, sub, mul, truediv
+print(add(5, 2))
+print(truediv(3,4))
+print(pow(2, 3))  # Also available in math library
+
+# like C++, Python library consist of ceil, floor, round
+# ceil = get next integer to the passed decimal value
+# floor = get prior integer to the passed decimal value
+# round
+print(round(4.7))
+print(round(4.4))
+print(round(4.66687, 3)) # Can round the decimal to desired decimal places
+print(min(8, 4, 5, 1))
+print(max(8, 4, 5, 1))
