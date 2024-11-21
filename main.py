@@ -142,3 +142,44 @@ print(round(4.4))
 print(round(4.66687, 3)) # Can round the decimal to desired decimal places
 print(min(8, 4, 5, 1))
 print(max(8, 4, 5, 1))
+
+opening() # Strings
+# Strings surrounded by either single or double quotation marks are the same
+print(f"\"Hello\" is the same as \'Hello\'.")
+
+# Assigning a variable followed by an equal and the string
+a = "hello"
+print(a)
+
+# Multiline string to a variable using three quotes -> """
+a_ = """In C++ to get more words insted of using std::cin,
+use getline(std::cin, a), and it will print out the whole sentence."""
+print(a_)
+
+# Like C++, strings in Python are also an arrays of bytes representing the unicode characters
+# Python does not have a char data type, a single char is simply a string with a length of 1
+# Square bracket can be used to access elements of the string
+
+a__ = "Hello, There!"
+print(a__[0])
+
+# Strings are arrays, can loop through the characters in a string with for loop
+for x in "Hello":
+    print(x)
+    
+# In C++ get the length with "length()", and in Python its "len()"
+print(len(a__))
+
+# Checking certain phrase or char prsent in a string, use keyword "in"
+print("whole" in a_)
+
+# If statement
+if "!" in a__:
+    print("'!' is present.")
+    
+# "not" for phrase or char that does not appear in string
+print("whole" not in a__)
+
+# If statement for "not"
+if "whole" not in a__:
+    print("'whole' is NOT present.")
