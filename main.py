@@ -1,14 +1,15 @@
 import string # To use string methods like upper(), casefold() etc
 
-def opening():
+def opening(): # "def" is used to define a function
     print("********************")
 
+opening
 print("Hello World")
-slices = input("Pick a number\n") # Creating variable
+slices = input("Pick a number\n") # Create variable
 print("Great! You'll get " + str(slices) + " slices of pizza.\n")
 
-opening() # Creating function
-def multiply(x, y):
+opening()
+def multiply(x, y): #
     return x * y
 
 x = int(input("Pick a number for x\n"))
@@ -16,14 +17,12 @@ y = int(input("Pick a number for y\n"))
 total = multiply(x, y)
 print(f"The total of x * y with multiply() function is {total}.\n")
 
-# Python has no command for declaring a variable.
-# A variable is created when some value is assigned to it.
-# The value assigned to a variable determines the data type of that variable.
+# Python has no command for declaring a variable and a variable is created when some value is assigned to it.
 # In Python, void functions are not exactly the same as functions in C/C++
 # If the function body does not have any return statement then a special value None returns when the function terminates
 
 opening()
-def power(base, exponent):                                              # Creating pow function
+def power(base, exponent): # Create pow function
     result = 1
     for x in range(exponent):
         result = result * base
@@ -35,23 +34,19 @@ def print_pow(base, exponent):
     # f-strings (formatted string literals) is a concise and readable way to embed variables directly into strings
     # The f before the string indicates that it is an f-string, and within the curly braces {}, can insert variables or expressions that will be evaluated and formatted into the string
     # Why Use f-strings?
-        # Readability: F-strings make the code more readable compared to other methods of string formatting (like using + concatenation or .format()), especially when there are many variables to include in a string.
-        # Performance: F-strings are faster than alternatives like % formatting or .format(), because they are evaluated at runtime and directly inserted into the string.
+        # READABILITY: F-strings make the code more readable compared to other methods of string formatting (like using + concatenation or .format()), especially when there are many variables to include in a string.
+        # PERFORMANCE: F-strings are faster than alternatives like % formatting or .format(), because they are evaluated at runtime and directly inserted into the string.
 
     #Comparison:
-
-    # print("{} raised to {}, the power is {}.".format(base, exponent, my_power))
-
-    # Or using string concatenation (less efficient and harder to read):
-
-    # print(str(base) + " raised to " + str(exponent) + ", the power is " + str(my_power) + ".")
+        # print("{} raised to {}, the power is {}.".format(base, exponent, my_power))
+        # Or using string concatenation (less efficient and harder to read):
+        # print(str(base) + " raised to " + str(exponent) + ", the power is " + str(my_power) + ".")
 
 base = int(input("What is the base?\n"))
 exponent = int(input("What is the exponent?\n"))
 print_pow(base, exponent)
 print("\n")
 
-# Python is an interpreted language
 # Unlike C++, python does not need datatype when declaring variables
 # Python data types are numeric(int, float), dictionary{}, bool, set{}, sequence types(string, list, tuple) 
 
