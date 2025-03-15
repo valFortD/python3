@@ -1,15 +1,15 @@
 import string # To use string methods like upper(), casefold() etc
 
-def opening(): # "def" is used to define a function
+def opening(): # def is used to define a function
     print("********************")
 
-opening
+opening()
 print("Hello World")
 slices = input("Pick a number\n") # Create variable
 print("Great! You'll get " + str(slices) + " slices of pizza.\n")
 
 opening()
-def multiply(x, y): #
+def multiply(x, y):
     return x * y
 
 x = int(input("Pick a number for x\n"))
@@ -18,7 +18,7 @@ total = multiply(x, y)
 print(f"The total of x * y with multiply() function is {total}.\n")
 
 # Python has no command for declaring a variable and a variable is created when some value is assigned to it.
-# In Python, void functions are not exactly the same as functions in C/C++
+# Python, void functions are not exactly the same as functions in C/C++
 # If the function body does not have any return statement then a special value None returns when the function terminates
 
 opening()
@@ -28,6 +28,7 @@ def power(base, exponent): # Create pow function
         result = result * base
     return result
 
+opening()
 def print_pow(base, exponent):
     my_power = power(base, exponent)
     print(f"{base} raised to {exponent}, the power is {my_power}.")
@@ -49,12 +50,12 @@ print("\n")
 
 # Unlike C++, python does not need datatype when declaring variables
 # Python data types are numeric(int, float), dictionary{}, bool, set{}, sequence types(string, list, tuple) 
-
-opening() # Integral types in C++, numeric in Python
+# Integral types in C++, numeric in Python
 # int = integers, contains positive and negative whole numbers. No fractions or decimals
 # float = floating numbers = decimal point numbers
 # complex = complex numbers
 
+opening()
 a = 1
 print(f"Type of a is {type(a)}.")
 
@@ -64,9 +65,10 @@ print(f"The type of b is {type(b)}.")
 c = 1 + 1j
 print(f"The type of c is {type(c)}.")
 
+opening()
 # Compared to C/C++, Python DOES NOT have signed and unsigned integers as data types
-# There is no need to specify the data types of variables as the interpreter itself predicts the variable data type based on the value assigned to it
-# But can still convert signed integer to unsigned integer with the following example
+# NO need to specify the data types of variables as the interpreter itself predicts the variable data type based on the value assigned to it
+# Yet still can convert signed integer to unsigned integer with the following example
 signed_integer = -100
 
 # Adding 2^32 to convert signed to unsigned integer
@@ -77,7 +79,7 @@ print(type(unsigned_integer))
 opening()
 print(f"Python3 use Unicode by default and it allows for the representation of a much wider range of characters. Thus Python does not have a character data type like C++ does.\n")
 
-opening() # In Python it is known as Escape Characters(Escape sequences in C++)
+opening() # Python is known as Escape Characters(Escape sequences in C++)
 text1 = "Hello"
 text2 = "There"
 print("Python and C++ are \"super\" awesome!")       # \" for strings
@@ -88,7 +90,8 @@ print(f"{text1}\b {text2}.")                         # \b delete a char
 print(f"{text1}\f{text2}.")                          # \f == \v(C++)
 print("\n")
 
-opening() # BOOL FUNCTION
+opening()
+# BOOL FUNCTION
 not_found = 0
 found = True
 num = 5
@@ -100,7 +103,8 @@ print("\n")
 # Any strings, list, tuple, set and dictionary are True, except empty ones
 # Any number is True, except 0
 
-opening() # Floating num
+opening()
+# Floating num
 a_ = 10.0
 print(type(a_))
 print(float(50.77))
@@ -116,15 +120,15 @@ c_ = float(3)
 print(type(c_))   # Because specified it will be floating num even without decimal points
 print("\n")
 
-opening()  # Constant
+opening()
 # Constants are usually defined on a module level and written in all capital letters with underscores separating words
 MAX_OVERFLOW = 100
 TOTAL = 5
 print(f"These examples {MAX_OVERFLOW} and {TOTAL}, will be an examples of const variables in Python.\n")
 
-opening()  # Numeric function
-# More often used = standard operators such as +, -, *, /
-# pow for getting power value
+opening()
+# Numeric function
+# More often used, standard operators such as +, -, *, /. pow for getting power value
 # Import math library for advanced mathematical operations
 # Functions such as min, max to get minimum and maximum of the numbers passed
 # Can also perform arithmetic operations using operator like, add, sub, mul, trudiv
@@ -132,7 +136,7 @@ import operator
 from operator import add, sub, mul, truediv
 print(add(5, 2))
 print(truediv(3,4))
-print(pow(2, 3))  # Also available in math library
+print(pow(2, 3))
 
 # like C++, Python library consist of ceil, floor, round
 # ceil = get next integer to the passed decimal value
@@ -145,7 +149,7 @@ print(min(8, 4, 5, 1))
 print(max(8, 4, 5, 1))
 print("\n")
 
-opening() # Strings
+opening()
 # Strings surrounded by either single or double quotation marks are the same
 print(f"\"Hello\" is the same as \'Hello\'.")
 
@@ -175,6 +179,7 @@ print(len(a__))
 # Checking certain phrase or char prsent in a string, use keyword "in"
 print("whole" in a_)
 
+opening()
 # If statement
 if "!" in a__:
     print("'!' is present.")
@@ -186,7 +191,8 @@ print("whole" not in a__)
 if "whole" not in a__:
     print("'whole' is NOT present.\n")
 
-opening() # String methods
+opening()
+# String methods
 b_ = "c++ string methods does have similarities with Python ones."
 print(f".capitalize() converts the first char to upper case, for example \"{b_.capitalize()}\". .upper() converts the original string to an uppercase string. For example, \"{b_.upper()}\"\n")
 
@@ -195,12 +201,12 @@ print(upper_b)
 print(f".casefold() convert strings into lower case, for example \"{upper_b.casefold()}\"\n")
 print(f".lower() also work in a similar way, for example \"{upper_b.lower()}\"\n")
 
-a = {"Hello", "there", "Nikki"}
+a = {"Hello", "there", "N"}
 string = " ".join(a)
 print(f".join() converts the elements into a string, for example, \"{string}\".\n")
 
 b = "   something   "
 print(f".lstrip() returns a removed spaces left side of the string, for example, \"{b.lstrip()}\".\n The rstrip() will returns a removed right spaces of the string, for example, \"{b.rstrip()}\".\n")
 
-c = "Hello there Nikki"
+c = "Hello there N"
 print(f".replace() in C++ is similar to python. It returns a string where a specified value is replaced with a specified value. For example, \"Hello\" will be replaced with \"Hi\", ({c}) to ({c.replace("Hello", "Hi")}).")
