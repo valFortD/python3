@@ -3,7 +3,7 @@ import string # To use string methods like upper(), casefold() etc
 def opening():
     print("********************")
 
-print("Hello Nikki")
+print("Hello World")
 slices = input("Pick a number\n") # Creating variable
 print("Great! You'll get " + str(slices) + " slices of pizza.\n")
 
