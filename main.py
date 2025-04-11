@@ -90,8 +90,7 @@ print(f"{text1}\b {text2}.")                         # \b delete a char
 print(f"{text1}\f{text2}.")                          # \f == \v(C++)
 print("\n")
 
-opening()
-# BOOL FUNCTION
+opening() # BOOL FUNCTION
 not_found = 0
 found = True
 num = 5
@@ -103,13 +102,12 @@ print("\n")
 # Any strings, list, tuple, set and dictionary are True, except empty ones
 # Any number is True, except 0
 
-opening()
-# Floating num
+opening() # Floating num
 a_ = 10.0
 print(type(a_))
 print(float(50.77))
 
-b_ = float('-123.12')  # Convert it to strings
+b_ = float('-123.12')
 print(b_)
 
 # Special characters cannot be floating numbers
@@ -153,10 +151,6 @@ opening()
 # Strings surrounded by either single or double quotation marks are the same
 print(f"\"Hello\" is the same as \'Hello\'.")
 
-# Assigning a variable followed by an equal and the string
-a = "hello"
-print(a)
-
 # Multiline string to a variable using three quotes -> """
 a_ = """In C++ to get more words insted of using std::cin,
 use getline(std::cin, a), and it will print out the whole sentence."""
@@ -179,8 +173,7 @@ print(len(a__))
 # Checking certain phrase or char prsent in a string, use keyword "in"
 print("whole" in a_)
 
-opening()
-# If statement
+opening() # If statement
 if "!" in a__:
     print("'!' is present.")
     
@@ -191,9 +184,8 @@ print("whole" not in a__)
 if "whole" not in a__:
     print("'whole' is NOT present.\n")
 
-opening()
-# String methods
-b_ = "c++ string methods does have similarities with Python ones."
+opening() # String methods
+b_ = "c++ string methods does have similarities with Python."
 print(f".capitalize() converts the first char to upper case, for example \"{b_.capitalize()}\". .upper() converts the original string to an uppercase string. For example, \"{b_.upper()}\"\n")
 
 upper_b = b_.upper()
@@ -208,5 +200,5 @@ print(f".join() converts the elements into a string, for example, \"{string}\".\
 b = "   something   "
 print(f".lstrip() returns a removed spaces left side of the string, for example, \"{b.lstrip()}\".\n The rstrip() will returns a removed right spaces of the string, for example, \"{b.rstrip()}\".\n")
 
-c = "Hello there N"
-print(f".replace() in C++ is similar to python. It returns a string where a specified value is replaced with a specified value. For example, \"Hello\" will be replaced with \"Hi\", ({c}) to ({c.replace("Hello", "Hi")}).")
+c = "Hello there"
+print(f".replace() in cpp is similar to python. It returns a string where a specified value is replaced with another value. For example, \Hello\" will be replaced with \"Hi\", ({c}) to ({c.replace('Hello', 'Hi')}).\n")
