@@ -130,3 +130,109 @@ mean_failed_attempts = statistics.mean(monthly_failed_attempts)
 print("mean:", mean_failed_attempts)
 median_failed_attempts = statistics.median(monthly_failed_attempts)
 print("median:", median_failed_attempts)
+
+openClose()
+# Apply upper and lower method to "Hello"
+print("Hello".upper())
+print("Hello".lower())
+
+openClose()
+# Extract a slice from a string
+print("Hello"[1:4])
+
+openClose()
+# .index() finds the first occurrence of the input in a string and returns its location
+# Use the index string method
+print("HELLO".index("E"))
+
+# Search for the character "L"
+print("HELLO".index("L"))
+# The answer is 2 because the first occurrence of "L" is at index 2, printing the first occurrence of "L"
+
+openClose()
+# String are immutable
+# Immmutable means that once a string is created, it cannot be changed
+my_string = "Hello"
+# my_string[1] = "a"  # This will raise an error
+
+openClose()
+# Finding substrings with .index()
+tshah_index = "tsnowflake, tshah, tcarter".index("tshah")
+print(tshah_index)
+
+openClose()
+# ===== Activity work with strings =====
+
+# Assign 'employee_id to a four digit number as an initial value 
+employee_id = 4186
+
+# Reassign `employee_id` to the same value but in the form of a string
+
+employee_id = str(employee_id)
+
+# Display the `employee_id` as it currently stands
+
+print(employee_id)
+
+# Conditional statement that updates the `employee_id` if its length is less than 5 digits
+
+if (len(employee_id) < 5):
+    employee_id = "E" + employee_id
+    
+# Display the `employee_id` after the update
+    
+print(employee_id)
+
+"""
+It's a good idea to save important data in variables when programming. This allows for quick and easy tracking and reuse of information.
+Store the output of the .index() method in a variable called ind, which is short for index. This index represents the position where the domain extension ".com" starts in the url.
+"""
+
+# === Assign `url` to a specific URL ===
+
+url = "https://exampleURL1.com"
+
+# Assign `ind` to the output of applying `.index()` to `url` in order to extract the starting index of ".com" in `url` 
+
+ind = url.index(".com")
+
+# Assign `url` to a specific URL
+
+url = "https://exampleURL1.com"
+
+# Assign `ind` to the output of applying `.index()` to `url` in order to extract the starting index of ".com" in `url` 
+
+ind = url.index(".com")
+
+# Extract the domain extension in `url` and display it
+
+print(url[ind:ind+4])
+
+"""
+Conclusion
+
+Strings are instrumental in storing important, security-related data, such as device IDs and URLs.
+String concatenation allows you to easily combine information in a string with the information stored in another string.
+String slicing is a powerful technique that enables you to extract any subsection of a string.
+Python has many functions and methods that help analysts work with string values, as well as data that they want to convert to string format.
+    The type() function returns the data type of its input.
+    The str() function converts the input object into a string. For example, when called on an integer, str() returns that integer value converted to a string.
+    The len() function returns the number of elements in an object. When called on a string, len() returns the number of characters in that string.
+    The .index() method finds the first occurrence of the input in a string and returns its location. It provides the index where the substring begins.
+
+"""
+
+openClose()
+# List methods
+# Concatenate two lists
+my_list = ["a", "b", "c", "d", "e"]
+number_list = [1, 2, 3, 4, 5]
+print(my_list + number_list)
+
+# Use the insert method
+my_list.insert(1, 7)
+print(my_list)
+
+# Use the remove method
+my_list.remove("d")
+print(my_list)
