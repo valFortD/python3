@@ -236,3 +236,153 @@ print(my_list)
 # Use the remove method
 my_list.remove("d")
 print(my_list)
+
+openClose()
+ip_address = ["198.223.xx.xx", "198.101.xx.xx", "180.064.xx.xx", "192.168.xx.xx", "184.090.xx.xx"]
+
+# Extract the first three characters from a list of IP addresses
+networks = []
+for address in ip_address:
+    networks.append(address[0:3])
+print(networks)
+
+openClose()
+#Task 4
+# Assign `approved_users` to a list of approved usernames
+
+approved_users = ["elarson", "bmoreno", "sgilmore", "eraab", "gesparza"]
+
+# Assign `approved_devices` to a list of device IDs that correspond to the usernames in `approved_users`
+
+approved_devices = ["8rp2k75", "hl0s5o1", "4n482ts", "a307vir", "3rcv4w6"]
+
+# Assign `username` to a username
+
+username = "sgilmore"
+
+# Conditional statement
+# If `username` belongs to `approved_users`, then display "The user ______ is approved to access the system."
+# Otherwise display "The user ______ is not approved to access the system."
+if username in approved_users:
+    print("The username", username, "is approved to access the system.")
+else:
+    print("The user", username, "is not approved to access the system.")
+
+# Task 5 When used on a list, the .index() method will return the position of the given value in the list.
+
+username = "sgilmore"
+
+# Assign `ind` to the index of `username` in `approved_users`
+
+ind = approved_users.index(username)
+
+# Display the value of `ind`
+
+print(ind)
+
+"""
+Task 6
+
+This task will allow you to build your understanding of list operations for the algorithm that you'll eventually build. It will demonstrate how you can find an index in one list and then use this index to display connected information in another list.
+"""
+ind = approved_users.index(username)
+
+# Display the device ID at the index that matches the value of `ind` in `approved_devices`
+
+print(approved_devices[ind])
+
+"""
+Task 7¶
+
+Your next step in creating the algorithm is to determine if a username and device ID correspond.
+"""
+# Conditional statement
+# If `username` belongs to `approved_users`, and if the device ID at `ind` in `approved_devices` matches `device_id`,
+# then display a message that the username is approved,
+# followed by a message that the user has the correct device
+device_id = "4n482ts"
+
+if username in approved_users and approved_devices:
+    print("The username", username, "is approved to access the system.")
+    print(device_id, "is the assigned device for", username)
+
+"""
+Task 8
+
+It would also be helpful for users to receive messages when their username is not approved or their device ID is incorrect.
+"""
+device_id = "4vn482ts"
+if username in approved_users and device_id == approved_devices[ind]:
+    print("The user", username, "is approved to access the system.")
+    print(device_id, "is the assigned device for", username)
+
+# Elif statement
+# Handles the case when `username` belongs to `approved_users` but element at `ind` in `approved_devices` does not match `device_id`,
+# and displays two messages accordingly
+
+elif username in approved_users and device_id != approved_devices[ind]:
+    print("The user", username, "is approved to access the system, but", device_id, "is not their assigned device.")
+
+"""
+Task 9
+
+In this task, you'll complete your algorithm by developing a function that uses some of the code you've written in earlier tasks. This will automate the login process.
+"""
+# Define a function named `login` that takes in two parameters, `username` and `device_id`
+
+def login(username, device_id):
+
+    # If `username` belongs to `approved_users`, 
+
+    if username in approved_users:
+
+        # then display "The user ______ is approved to access the system.",
+
+        print("The user", username, "is approved to access the system.")
+
+        # assign `ind` to the index of `username` in `approved_users`,
+
+        ind = approved_users.index(username)
+
+        # and execute the following conditional
+        # If `device_id` matches the element at the index `ind` in `approved_devices`,
+
+        if device_id == approved_devices[ind]:
+
+          # then display "______ is the assigned device for ______" 
+
+          print(device_id, "is the assigned device for", username)
+
+        # Otherwise,
+
+        else:
+
+          # display "______ is not their assigned device"
+
+          print(device_id, "is not their assigned device.")
+  
+    # Otherwise (part of the outer conditional and handles the case when `username` does not belong to `approved_users`),
+
+    else:
+
+        # Display "The user ______ is not approved to access the system."
+
+        print("The username", username, "is not approved to access the system.")
+
+# Call the function you just defined to experiment with different username and device_id combinations
+
+login("bmoreno", "hl0s5o1")
+login("elarson", "r2s5r9g")
+login("abernard", "4n482ts")
+
+"""
+Conclusion
+    Indexing a list is similar to indexing a string. Index values start at 0.
+    The .append() method helps you add new elements to the end of lists.
+    The .remove() method helps you remove elements from lists.
+    The .index() method can be used on different types of sequences. They can be used not only with strings, but also with lists.
+        With a list, the .index() method allows you to identify the position where a specified element is located in that list.
+    If two lists contain information that correspond to each other in a specific order, you can use indices to pair elements from the lists together.
+    Functions can be used to develop algorithms. When defining a function, you must specify the parameters it takes in and the actions it should execute.
+"""
+
